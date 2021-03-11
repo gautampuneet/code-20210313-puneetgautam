@@ -3,7 +3,7 @@
 This is a Body mass Index Calculator, which will have following features inside it.
 
   1. You can provide a json file which will have a list of dicts in it and dict would have the Gender, HeightCm, WeightKg in it.
-  2. It will get the HeightCm and WeightKg from each dict and will calculate its BMI using 2BMI(kg/m ) = mass(kg) / height(m) Formula.
+  2. It will get the HeightCm and WeightKg from each dict and will calculate its BMI using BMI(kg/m ) = mass(kg) / height(m) Formula.
   3. It will also get BMI Category and Health risk for each person and at the end it will add these three values in the same list. 
   4. It also have the feature to return count of Overweight People in that list. 
 
