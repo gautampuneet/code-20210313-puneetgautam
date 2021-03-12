@@ -73,14 +73,20 @@ class BMICalculator:
 
 
 if __name__ == "__main__":
-    # Case 1 - Will Create a file with BMI, BMI Category, Health Risk
-    bmi = BMICalculator("data.json").execute()
-
-    # Case 2 - Will Create a file with BMI, BMI Category, Health Risk and also return the count of overweight people
-    bm2 = BMICalculator("data.json").execute(True)
-
-    # Case 3 - Will return the count of overweight people in file
-    bm3 = BMICalculator("Output_2021-03-12 01:36:37.028884.json").get_overweight_people_count()
-    print(bmi)
-    print(bm2)
-    print(bm3)
+    print("BMI Calculator\n 1. Create file with calculated bmi\n 2. Create File with calculated bmi and"
+          "give overweight count\n 3. Count the overweight people")
+    user_choice = int(input("Please Provide Your Choice: "))
+    if user_choice == 1:
+        # Case 1 - Will Create a file with BMI, BMI Category, Health Risk
+        bmi = BMICalculator("data.json").execute()
+        print(bmi)
+    elif user_choice == 2:
+        # Case 2 - Will Create a file with BMI, BMI Category, Health Risk and also return the count of overweight people
+        bm2 = BMICalculator("data.json").execute(True)
+        print(bm2)
+    elif user_choice == 3:
+        # Case 3 - Will return the count of overweight people in file
+        bm3 = BMICalculator("Output_2021-03-12 01:36:37.028884.json").get_overweight_people_count()
+        print(bm3)
+    else:
+        print("Wrong Choice")

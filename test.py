@@ -1,7 +1,7 @@
 import unittest
 import json
 import pathlib as pl
-from main import BMICalculator
+from bmi_calculator import BMICalculator
 import constants
 
 
